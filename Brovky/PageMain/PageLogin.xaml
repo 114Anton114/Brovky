@@ -1,0 +1,40 @@
+﻿<Page x:Class="Brovky.PageMain.PageLogin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Brovky.PageMain"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageLogin">
+
+    <Grid>
+        <Grid
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+                    Width="450"
+                    Height="150"
+            Background="#e1e4ff">
+            
+        <StackPanel
+            VerticalAlignment="Center">
+                <GroupBox Header="Введите пароль для входа">
+                    
+                <PasswordBox
+                    Name="PsbLogin"/>
+                </GroupBox>
+                    
+            <Button
+                Height="20"
+                Width="50"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Right"
+                Click="Button_Click"
+                Name="BtnLogin"
+                Content="Войти"
+                Background="#ff4a6d"
+                Style="{StaticResource PgLgn}"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

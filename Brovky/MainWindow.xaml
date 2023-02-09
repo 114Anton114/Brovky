@@ -1,0 +1,30 @@
+﻿<Window x:Class="Brovky.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Brovky"
+        mc:Ignorable="d"
+        Title="Салон красоты" Height="450" Width="800">
+    <Grid
+        Background="#e1e4ff"
+        >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="158*"/>
+        </Grid.RowDefinitions>
+        <StackPanel
+            Background="#ff4a6d">
+            <TextBlock 
+                Text="Бархатные бровки"
+                Style="{StaticResource MainTxb}"
+                />
+        </StackPanel>
+
+        <Frame
+            Grid.Row="1"
+            NavigationUIVisibility="Hidden"
+            Name="FrmMain"
+            />
+    </Grid>
+</Window>
